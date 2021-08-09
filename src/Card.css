@@ -1,6 +1,3 @@
-.word{
-    display:block;
-}
-.answer{
+.displayBlockNone{
     display:none;
 }
