@@ -1,32 +1,26 @@
 import React from "react";
 import {translations} from './Dutch-to-English'
-
-
+import './Card.css';
 
 function Card(){
-    // function reveal(element){
-    //     let targetElement = document.getElementsByClassName(element);
-    //     console.log(targetElement)
-    //     switch (targetElement[0].parentNode.style.display){
-    //         case 'block':
-    //             targetElement[0].parentNode.style.display = "none";
-    //             break;
-    //         case "none":
-    //             targetElement[0].parentNode.style.display = "block";
-    //     }
-    // } PROBLEM IS YOU CAN'T GET PARENT NODE OF AN 'HTMLCOLLECTION' WHICH IS WHAT IT READS THE ELEMENT AS - NEED TO RESEARCH REACT EVENTS
+    function reveal(){
+        let wordElement = document.getElementsByClassName('word');
+        let answerElement = document.getElementsByClassName('answer');
+        wordElement[0].classList.toggle("displayBlockNone");
+        answerElement[0].classList.toggle("displayBlockNone");
+    } 
     let number = Math.floor((Math.random() * 998));
     let word = translations[number].Dutch;
     let answer = translations[number].English;
     return (
         <div>
-            <div className="word">
-                <h1 onClick={console.log("word")} >
+            <div >
+                <h1 className="word" onClick={reveal}> 
                     {word}
                 </h1>
             </div>
-            <div className="answer">
-                <h1 onClick={console.log("answer")}>
+            <div >
+                <h1 className="answer displayBlockNone" onClick={reveal}> 
                     {answer}
                 </h1>
             </div>
@@ -34,7 +28,3 @@ function Card(){
     );
 }
 export default Card;
-
-// ALT: <h1 onClick={reveal('answer')}>  <h1 onClick={reveal('word')}>
-
-// ALT: <h1 onClick={console.log("word")} > <h1 onClick={console.log("answer")}>
