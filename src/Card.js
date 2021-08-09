@@ -2,14 +2,13 @@ import React from "react";
 import {translations} from './Dutch-to-English'
 import './Card.css';
 
-function Card(){
+function Card({number}){
     function reveal(){
         let wordElement = document.getElementsByClassName('word');
         let answerElement = document.getElementsByClassName('answer');
         wordElement[0].classList.toggle("displayBlockNone");
         answerElement[0].classList.toggle("displayBlockNone");
-    } 
-    let number = Math.floor((Math.random() * 998));
+    }
     let word = translations[number].Dutch;
     let answer = translations[number].English;
     return (
