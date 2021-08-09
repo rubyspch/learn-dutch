@@ -1,16 +1,17 @@
-// import logo from './logo.svg';
+import React, {useState} from 'react';
 import './App.css';
 import Card from './Card';
-// import Next from './Next';
 
 function App() {
-  function refresh(){
-    window.location.reload();
+  const [number, setNumber] = useState(0);
+  function createNumber(){
+    let number = Math.floor((Math.random() * 998));
+    setNumber(number);
   }
   return (
     <div className="App">
-      <Card />
-      <button onClick={refresh} id="next">Next</button>
+      <Card number={number}/>
+      <button onClick={createNumber} id="next">Next</button>
     </div>
   );
 }
