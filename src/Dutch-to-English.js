@@ -1,7 +1,7 @@
 export const translations = [
  {
    "Dutch": "als",
-   "English": "as"
+   "English": "as / if"
  },
  {
    "Dutch": "I",
