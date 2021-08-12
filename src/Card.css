@@ -1,3 +1,24 @@
 .displayBlockNone{
     display:none;
 }
+#container{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    height:50vh;
+    border:3px solid rgb(233, 92, 92);
+    box-shadow: 3px 3px 3px rgb(235, 92, 92);
+    border-radius: 20px;
+    min-width:50vw;
+    font-size:2em;
+}
+@media screen and (max-width:500px){
+    #container{
+        min-width:80vw;
+        height:40vh;
+        font-size:25px;
+    }
+    h1{
+        padding:10px;
+    }
+}
