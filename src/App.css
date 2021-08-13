@@ -8,6 +8,13 @@ body{
 .App{
     margin-bottom: 10vh;
 }
-#next{
-    
+button{
+    width:30vw;
+    height:10vh;
+    min-height:25px;
+    margin-top:5vh;
+    font-size:1em;
+    font-weight:bold;
+    color:#202020;
+    background-color:#FFFFFF;
 }
