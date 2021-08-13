@@ -6,6 +6,7 @@
     align-items: center;
     justify-content: center;
     height:50vh;
+    min-height:75px;
     border:3px solid rgb(233, 92, 92);
     box-shadow: 3px 3px 3px rgb(235, 92, 92);
     border-radius: 20px;
