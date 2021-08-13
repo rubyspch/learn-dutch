@@ -13,14 +13,17 @@ function Card({number, colour}){
     let answer = translations[number].English;
     console.log(colour);
     // function colourAdd(){
-    //     console.log(colour);
-    //     const divContainer = document.getElementById('container');
-    //     divContainer.style.border = `3px solid rgb(${colour})`;
-    //     divContainer.style.boxShadow = `3px 3px 3px rgb(${colour})`;
+        // console.log(colour);
+        // const divContainer = document.getElementById('container');
+        // divContainer.style.border = `3px solid rgb(${colour})`;
+        // divContainer.style.boxShadow = `3px 3px 3px rgb(${colour})`;
     // }
-    // window.onload = colourAdd();
+    const styleObj = {
+        border: "3px solid "+ colour,
+        boxShadow: "3px 3px 3px " + colour,
+    }
     return (
-        <div id="container" style={{border:`3px solid rgb(${colour})`, boxShadow: `3px 3px 3px rgb(${colour})`}}>
+        <div id="container" style={styleObj}>
             <div >
                 <h1 className="word" onClick={reveal}> 
                     {word}
