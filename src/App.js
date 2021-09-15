@@ -4,12 +4,15 @@ import Card from './Card';
 import Footer from './Footer';
 
 function App() {
+
   const [number, setNumber] = useState(0);
   const [colour, setColour] = useState("");
+
   function createNumber(){
     let number = Math.floor((Math.random() * 998));
     setNumber(number);
-  }    
+  }
+
   useEffect(() => {
     const str = "0123456789ABCDEF";
     let hex = "#"
@@ -19,6 +22,7 @@ function App() {
     }
     setColour(hex);
   }, [number, setNumber]);
+  
   return (
     <div className="App">
       <Card colour={colour} number={number}/>
