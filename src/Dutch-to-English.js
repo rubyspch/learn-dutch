@@ -3994,5 +3994,13 @@ export const translations = [
  {
   "Dutch": "gezellig",
   "English": "cosy"
+ },
+ {
+  "Dutch": "fles",
+  "English": "bottle"
+ },
+ {
+  "Dutch": "tas",
+  "English": "bag"
  }
 ]
