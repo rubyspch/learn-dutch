@@ -3,25 +3,23 @@ import {translations} from './Dutch-to-English'
 import './Card.css';
 
 function Card({number, colour}){
+
     function reveal(){
         let wordElement = document.getElementsByClassName('word');
         let answerElement = document.getElementsByClassName('answer');
         wordElement[0].classList.toggle("displayBlockNone");
         answerElement[0].classList.toggle("displayBlockNone");
     }
+
     let word = translations[number].Dutch;
     let answer = translations[number].English;
     console.log(colour);
-    // function colourAdd(){
-        // console.log(colour);
-        // const divContainer = document.getElementById('container');
-        // divContainer.style.border = `3px solid rgb(${colour})`;
-        // divContainer.style.boxShadow = `3px 3px 3px rgb(${colour})`;
-    // }
+    
     const styleObj = {
         border: "3px solid "+ colour,
         boxShadow: "3px 3px 3px " + colour,
     }
+    
     return (
         <div id="container" style={styleObj}>
             <div >
