@@ -3986,5 +3986,13 @@ export const translations = [
  {
    "Dutch": "werelddeel",
    "English": "continent"
+ },
+ {
+  "Dutch": "fiets",
+  "English": "bicycle"
+ },
+ {
+  "Dutch": "gezellig",
+  "English": "cosy"
  }
 ]
