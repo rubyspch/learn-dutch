@@ -260,6 +260,10 @@ export const translations = [
    "English": "spell"
  },
  {
+   "Dutch": "waarschuwing",
+   "English": "warning"
+ },
+ {
    "Dutch": "toevoegen",
    "English": "add"
  },
@@ -322,6 +326,10 @@ export const translations = [
  {
    "Dutch": "licht",
    "English": "light"
+ },
+  {
+   "Dutch": "schade",
+   "English": "damage"
  },
  {
    "Dutch": "soort",
