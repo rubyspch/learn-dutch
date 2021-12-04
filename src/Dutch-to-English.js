@@ -100,8 +100,8 @@ export const translations = [
    "English": "or"
  },
  {
-   "Dutch": "had",
-   "English": "had"
+   "Dutch": "brand",
+   "English": "fire"
  },
  {
    "Dutch": "de",
