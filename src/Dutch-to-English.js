@@ -4,8 +4,8 @@ export const translations = [
    "English": "as / if"
  },
  {
-   "Dutch": "I",
-   "English": "I"
+   "Dutch": "voorzichtig",
+   "English": "careful"
  },
  {
    "Dutch": "zijn",
