@@ -20,8 +20,8 @@ export const translations = [
    "English": "he"
  },
  {
-   "Dutch": "was",
-   "English": "was"
+   "Dutch": "bang",
+   "English": "scared"
  },
  {
    "Dutch": "voor",
